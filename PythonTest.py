@@ -59,7 +59,7 @@ print(z)
 
 
 
-#this is like arrays but not really
+#this is like arrays but not really;[ it is called list]
 fruits = ["apple", "banana", "cherry"]
 x, y, z  = fruits
 print(x)
@@ -95,6 +95,27 @@ print(x)
 
 #defining a variable global even inside the function makes it global for rest of the code
         
-"""
 
 #Data Types
+
+#weird data types
+# 1. tupes .. we will get into it
+# 2. range ... its like a sequence of numbers as in range(start, endBefore, step)
+# 3. dict ... as in dictionary
+x={"Name":"Parth", "Age":25}
+print(x)
+
+# 4. set.. idk we will get into it
+# 5. frozenset ...idk
+# 6. bytes
+# 7. bytearray ...:(
+  
+  Remember: 
+  
+  Tupes have ()
+  list have []
+  set have {}
+  
+"""
+
+#Numbers
