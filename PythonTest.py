@@ -57,7 +57,7 @@ print(x)
 print(y)
 print(z)
 
-"""
+
 
 #this is like arrays but not really
 fruits = ["apple", "banana", "cherry"]
@@ -74,3 +74,27 @@ print(z)
 print(x,y,z)
 
 #little change
+#can even do 
+
+print(x+y+z)
+
+
+
+#Function
+
+#if x is outside function it is global variable
+
+x="Tea"
+
+def myFunc():
+  x="Coffee"
+  print(x)
+
+myFunc()
+print(x)
+
+#defining a variable global even inside the function makes it global for rest of the code
+        
+"""
+
+#Data Types
