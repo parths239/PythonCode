@@ -110,12 +110,32 @@ print(x)
 # 6. bytes
 # 7. bytearray ...:(
   
-  Remember: 
+#Remember: 
   
-  Tupes have ()
-  list have []
-  set have {}
+#  Tupes have ()
+# list have []
+#  set have {}
   
 """
 
+#Date: 03/13/24
+
 #Numbers
+
+#types of number 
+# int
+# float
+# complex
+
+#you can even convert them to each other
+#except from complex to any number
+
+#random number
+
+import random
+
+print(random.randrange(1,100,2))
+
+#or
+
+print(random.randrange(5))
