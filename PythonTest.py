@@ -116,7 +116,7 @@ print(x)
 # list have []
 #  set have {}
   
-"""
+
 
 #Date: 03/13/24
 
@@ -129,6 +129,9 @@ print(x)
 
 #you can even convert them to each other
 #except from complex to any number
+#so if x = 5
+# y = float(x) changes it to floating point #
+
 
 #random number
 
@@ -139,3 +142,18 @@ print(random.randrange(1,100,2))
 #or
 
 print(random.randrange(5))
+
+
+"""
+
+#Casting
+# assigning data types to variable.
+# you would put x = int(2.3) return 2
+# x = int(2) ..return 2
+# x = int("2").. return 2 yes str to int
+# but the str has to be int
+
+
+#Strings
+
+# "Hi" and 'Hi' are same
