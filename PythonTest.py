@@ -216,7 +216,7 @@ print(a.split("a"))
 #the output would be:
 #[' This is ', ' text lm', 'o  ']
 
-"""
+
 #Date: 03/19/2024
 
 #     String Concatenation
@@ -227,5 +227,18 @@ b = "Bitch"
 c = a + " "+ b
 print(c)
 
+#           String Format
+# The format() method takes the passed arguments, 
+# formats them, and places them in the string 
+# where the placeholders {} are:
+# check out the example with the indexing
 
+quantity = 4
+itemNum = 32456
+price = 6.75
+
+myOrder = "I want to pay {2} dollars for {0} pieces of item number {1}"
+print(myOrder.format(quantity,itemNum,price))
+
+"""
 
