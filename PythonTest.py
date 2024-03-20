@@ -144,7 +144,7 @@ print(random.randrange(1,100,2))
 print(random.randrange(5))
 
 
-"""
+
 
 #Casting
 # assigning data types to variable.
@@ -157,3 +157,75 @@ print(random.randrange(5))
 #Strings
 
 # "Hi" and 'Hi' are same
+# so a string is an array of letters
+# is a = "Hello, World"
+# a[1] is e 
+
+#len() prints length
+
+# in function checks if the phrase is in the text 
+# txt = "The best things in life are free!"
+# print("free" in txt).... returns true 
+
+
+#txt = "The best things in life are free!"
+#if "free" in txt:
+#  print("Yes, 'free' is present.")
+# returns message....so we can use "in" in a "if statement"
+
+#there is also a "not in"
+
+#string slicing
+# so if, a is 
+a = "Hello, World"
+print(a[0:4])  #prints Hell...so starts with H and ends with o BUT it doesn't include 0
+print(a[-6:-1]) 
+#prints " Worl"...so starts from back with "," and doesn't include "," but
+#ends with l BUT also includes l
+
+
+
+# Date: 03/17/2024
+
+# String(cont.)
+
+a = " This is a text lmao  "
+
+# upper() will make upper case
+# built in method
+
+print(a.upper())
+
+# lower() will make lower case
+# built in method
+
+print(a.lower())
+
+# strip() will remove white space before and after the phrase
+# built in method
+
+print(a.strip())
+
+# replace() replaces letters of our choice
+
+print(a.replace("T","p"))
+
+# splits() splits into substring
+
+print(a.split("a"))
+#the output would be:
+#[' This is ', ' text lm', 'o  ']
+
+"""
+#Date: 03/19/2024
+
+#     String Concatenation
+
+# which means combining two strings
+a = "Hello,"
+b = "Bitch"
+c = a + " "+ b
+print(c)
+
+
+
