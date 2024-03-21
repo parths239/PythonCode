@@ -240,7 +240,71 @@ price = 6.75
 myOrder = "I want to pay {2} dollars for {0} pieces of item number {1}"
 print(myOrder.format(quantity,itemNum,price))
 
-"""
+
 # Date: 03/21/2024
 
+#  *** String Booleans **
+# apart from basic comparisons we also have bool() func 
+# that returns true or false 
+# 
+# ex1 
+if 5>15:
+  print("It is greater")
+else:
+  print("It is not")
 
+print(bool(5>15))
+
+bool("Hi") #has a value of true
+print(bool(95)) #returns true
+print(bool(0))  #returns false
+
+
+# ** Operators ** 
+# +, - , *, /,
+# % modulus
+# ** exponents 2**5 ..returns 32
+# // floor division .. returns neartest whole no in division ans
+
+# basic comparison operator
+# but the new ones are: 
+
+# "is" returns true if both variable are same
+# like, x is y is true is x=y
+
+# "is not" returns true if both variable are not same
+# like, x is not y is true is x!=y
+
+# then there is, in and not in
+
+# now interesting
+# print(6 & 3)
+# returns 2
+
+
+#The & operator compares each bit and set it to 1 if both are 1, otherwise it is set to 0:
+
+#6 = 0000000000000110
+#3 = 0000000000000011
+#--------------------
+#2 = 0000000000000010
+#====================
+
+
+# |	... OR	.....Sets each bit to 1 if one of two bits is 1 ..X | Y
+# ^	... XOR ....Sets each bit to 1 if only one of two bits is 1.. X ^ Y
+# check more out at: https://www.w3schools.com/python/python_operators.asp
+
+#The << operator inserts the specified number of 0's (in this case 2) from the right and let the same amount of leftmost bits fall off:
+
+#If you push 00 in from the left:
+# 3 = 0000000000000011
+#becomes
+#12 = 0000000000001100
+
+
+# and >> moves the zeros to right
+
+"""
+
+# *** LISTS ***
