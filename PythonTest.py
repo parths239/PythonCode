@@ -146,7 +146,7 @@ print(random.randrange(5))
 
 
 
-#Casting
+# Casting
 # assigning data types to variable.
 # you would put x = int(2.3) return 2
 # x = int(2) ..return 2
@@ -241,4 +241,6 @@ myOrder = "I want to pay {2} dollars for {0} pieces of item number {1}"
 print(myOrder.format(quantity,itemNum,price))
 
 """
+# Date: 03/21/2024
+
 
