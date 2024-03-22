@@ -308,3 +308,5 @@ print(bool(0))  #returns false
 """
 
 # *** LISTS ***
+# list uses []
+
