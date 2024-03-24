@@ -306,7 +306,83 @@ print(bool(0))  #returns false
 # and >> moves the zeros to right
 
 """
+# Date: 03/23/2024
+
+#*************************************************************************************************
+# 
+#    1. List is a collection which is ordered and
+#        []                          changeable. 
+#                                     Allows duplicate members.
+#
+#    2.Tuple is a collection which is ordered and 
+#        ()                           unchangeable. 
+#                                     Allows duplicate members.
+#
+#   3. Set is a collection which is   unordered, 
+#      {}                             unchangeable*, and unindexed. 
+#                                      No duplicate members.
+#
+# [ *Set items are unchangeable, but you can remove and/or add items whenever you like.]
+#
+#
+#   4. Dictionary is a collection which is ordered** and 
+#                                          changeable. 
+#                                          No duplicate members.
+#
+#***********************************************************************************************
 
 # *** LISTS ***
+
 # list uses []
+# Its like an array
+# List items are ordered, changeable, and allow duplicate values. 
+# They uses index for location
+# If you add new items to a list, the new items will be placed at the end of the list. 
+# an example here:
+
+thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+print(thislist) # prints the exact list
+print(len(thislist)) # prints length
+list1 = ["abc", 34, True, 40, "male"] # list could have any data type
+print(type(list1)) # so lists is itself a data type
+
+# another way to make a list is
+
+anotherList =  list(("Hi","This", "Iz","another","List", 4, "u"))
+
+# notice how we use curved brackets make list with list function
+
+#this would print banana
+thislist = ["apple", "banana", "cherry"]
+print(thislist[1])
+
+
+# Negative indexing means start from the end
+# -1 refers to the last item, -2 refers to the second last item etc.
+
+thislist = ["apple", "banana", "cherry"]
+print(thislist[-1])
+#prints cherry
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:5])
+# prints the range of values so it would start at cherry and end at kiwi 
+# but won't include melon @ 5
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[:4])
+# this would start at 0 and end at orange 
+
+print(thislist[2:])
+# this starts at cherry to end
+
+print(thislist[-4:-1])
+# negative indexing means u get "orange", "kiwi", "melon"
+
+if "apple" in thislist: # checks if sth is in the list
+  print("true")
+  
+# Now , to 
+  
+  
 
