@@ -305,7 +305,7 @@ print(bool(0))  #returns false
 
 # and >> moves the zeros to right
 
-"""
+
 # Date: 03/23/2024
 
 #*************************************************************************************************
@@ -381,8 +381,10 @@ print(thislist[-4:-1])
 
 if "apple" in thislist: # checks if sth is in the list
   print("true")
-  
-# Now , to 
+
+"""
+
+# Date: 03/27/2024
   
   
 
