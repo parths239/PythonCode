@@ -386,5 +386,192 @@ if "apple" in thislist: # checks if sth is in the list
 
 # Date: 03/27/2024
   
-  
+# to add item to the list you can just relace at specific index 
+# or change it by a range 
 
+# thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+
+# thislist[1] = "watermelon"
+# print(thislist) --> watermelon instead of banana
+
+# thislist[1:3] = ["blackcurrant", "watermelon"]
+# print(thislist) --> this would change from 1 & 2 's value
+
+
+#  Insert method in lists
+
+#  thislist = ["apple", "banana", "cherry"]
+#  thislist.insert(2, "watermelon")
+#  print(thislist)
+
+# Append method adds item at the end
+# thislist = ["apple", "banana", "cherry"]
+# thislist.append("orange")
+# print(thislist)
+
+# extend method add another lists/sets/dic/whatever to the OG list
+# thislist = ["apple", "banana", "cherry"]
+# tropical = ["mango", "pineapple", "papaya"]
+# thislist.extend(tropical)
+# print(thislist)
+
+#remove method
+# thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+# thislist.remove("banana")
+# print(thislist) -> remove first banada found
+
+# pop method
+# thislist.pop(1) -> removes from index 1
+# thislist.pop() -> removes last element
+
+# del keyword
+# del thisList[1] -> removes value at 1
+# del thisList -> deletes the whole list
+
+# clear method
+# thislist.clear() -> empties the list but list exists
+
+
+# *** Looping in Lists ***
+
+#for loops
+thisList = ["Pen", "Notebook", "wallet", "keys"]
+for x in thisList:
+  print(x)
+  
+thisList = ["Pen", "Notebook", "wallet", "keys"]
+for x in range(len(thisList)):
+  print(thisList[x])
+ 
+# while loop
+
+thisList = ["Pen", "Notebook", "wallet", "keys"]
+i = 0
+while i < len(thisList):
+  print(thisList[i])
+  i = i+1
+  
+  
+#*** List compression ***
+
+thislist = ["apple", "banana", "cherry"]
+[print(x) for x in thislist]
+
+# Normal code example
+ 
+# fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+#  newlist = []
+#  for x in fruits:
+#     if "a" in x:
+#     newlist.append(x)
+#  print(newlist)
+
+# Same Code can be written as
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x for x in fruits if "a" in x]
+
+print(newlist)
+
+
+#****************** LIST COMPRESSION FORMULA **********************
+#
+# newlist = [ expression for item in iterable if condition == True]
+# 
+# 
+# The return value is a new list, leaving the old list unchanged.
+# The condition is optional and can be omitted
+# iterable can be any iterable object, like a list, tuple, set 
+# we can also use range() for iterable
+# 
+#******************************************************************
+
+# another example
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x if x != "banana" else "orange" for x in fruits]
+
+print(newlist)
+
+# for the part, x if x != "banana" else "orange" , 
+# it keeps x from fruits is x is not banana 
+# but if it is banana it changes to orange
+
+
+
+#** Sorting in Lists ***#
+
+thislist.sort() #would sort alphabetically or numerically
+
+thislist.sort(reverse = True) # sorted in a descending order
+
+thislist.sort(key = str.lower) # sorting is case sensitive 
+# so all capital letters being sorted before lower case letters 
+# therefore we use all str to lower but OG value doesnt change
+
+#custom sorting
+thislist= ["some", "content"]
+def myfunc(n):
+    return #some property or equation# ** 
+thislist.sort(key = myfunc) # using key = function to sort
+print(thislist) 
+
+# reverses the order of list but not sorting
+thislist.reverse()
+
+
+##**** copying lists ***###
+list1 = []
+list2 = list1 # won't work because it would the same list with different names
+
+# but
+
+list2 = list1.copy() # would make new list and changes to list2 wont change list1
+
+# you can also do
+
+list2 = list(list1)
+#usingn the list function
+
+
+
+#**** JOINING LISTS ****#
+#
+# method 1
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+list3 = list1 + list2
+print(list3)
+
+# method 2
+# append to second list
+
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+for x in list2:
+  list1.append(x)
+
+print(list1)
+
+#method3
+# extend method
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+list1.extend(list2)
+#extending list1 by adding list2
+
+
+#*** Other methods
+
+#count()
+fruits = ['apple', 'banana', 'cherry']
+
+x = fruits.count("cherry")
+
+#index() returns where sth is located
+fruits = ['apple', 'banana', 'cherry']
+
+x = fruits.index("cherry")
