@@ -382,7 +382,7 @@ print(thislist[-4:-1])
 if "apple" in thislist: # checks if sth is in the list
   print("true")
 
-"""
+
 
 # Date: 03/27/2024
   
@@ -576,4 +576,51 @@ fruits = ['apple', 'banana', 'cherry']
 
 x = fruits.index("cherry")
 
+"""
+
 # Date: 04/02/24
+
+
+##******** TUPLE **********
+# I'd say read the W3school page
+# simple thing: for tuple with one element just put comma after first element
+
+thisTuple = ("Hello",)
+
+# you can't edit the tuple but you can convert it to list, change the list, 
+# and turn it back into tuple
+
+thisTuple=("Hello", "World")
+thisList = list(thisTuple)
+thisList[1] = "Parth"
+thisTuple = tuple(thisList)
+
+print(thisTuple)
+
+# Unpacking: allows assigning values from tuple to variable
+
+# Please read here: https://www.w3schools.com/python/python_tuples_unpack.asp
+
+# multiple tuples
+fruits = ("apple", "banana", "cherry")
+mytuple = fruits * 2
+
+print(mytuple) 
+# prints ("apple", "banana", "cherry", "apple", "banana", "cherry")
+
+## Tuple methods:
+
+# count()
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+
+x = thistuple.count(5)
+
+print(x) 
+
+# index()
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+
+x = thistuple.index(8)
+
+print(x) #returns 3
+
