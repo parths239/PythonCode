@@ -216,6 +216,7 @@ print(a.split("a"))
 #the output would be:
 #[' This is ', ' text lm', 'o  ']
 
+#when you do split it becomes 
 
 #Date: 03/19/2024
 
@@ -240,6 +241,12 @@ price = 6.75
 myOrder = "I want to pay {2} dollars for {0} pieces of item number {1}"
 print(myOrder.format(quantity,itemNum,price))
 
+item = "ice tea"
+time = 8
+location = "made coffee"
+
+theOgString = "Today I got {0} at {1} AM from {2}"
+print(theOgString.format(item,time,location))
 
 # Date: 03/21/2024
 
@@ -325,7 +332,7 @@ print(bool(0))  #returns false
 # [ *Set items are unchangeable, but you can remove and/or add items whenever you like.]
 #
 #
-#   4. Dictionary is a collection which is ordered** and 
+#   4. Dictionary is a collection which is ordered** and x2
 #                                          changeable. 
 #                                          No duplicate members.
 #
